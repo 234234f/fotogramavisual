@@ -1,1 +1,587 @@
-# fotogramavisual
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fotograma Visual</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1b1b1b;
+            color: #fff;
+        }
+
+        /* Estilos de navegación */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background: rgba(0, 0, 0, 0.7);
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        nav .logo img {
+            height: 40px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 16px;
+            padding: 5px 10px;
+            border-radius: 3px;
+        }
+
+        nav ul li a:hover {
+            background-color: #1e90ff;
+        }
+
+        /* Estilo del hero */
+        .hero {
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            transition: background-image 1s ease-in-out;
+            opacity: 0.95;
+        }
+
+        .hero h1 {
+            font-size: 4em;
+            margin: 0;
+        }
+
+        /* Secciones */
+        section {
+            padding: 100px 20px;
+        }
+
+        .btn-secondary {
+            display: block;
+            width: 200px;
+            margin: 40px auto;
+            text-align: center;
+            padding: 10px;
+            background: #1e90ff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .btn-secondary:hover {
+            background: #63c2ff;
+        }
+
+        /* Galería */
+        #galeria img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        #galeria .leyenda {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        /* Contacto */
+        #contacto .redes-sociales {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        #contacto .redes-sociales a {
+            color: #1e90ff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        #contacto form {
+            text-align: center;
+        }
+
+        #contacto input,
+        #contacto textarea {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        #contacto input[type="submit"] {
+            background: #1e90ff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        #contacto input[type="submit"]:hover {
+            background: #63c2ff;
+        }
+
+        /* Precios */
+        #precios table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        #precios th, #precios td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        #precios th {
+            background-color: #1e90ff;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navegación -->
+    <nav>
+        <div class="logo">
+            <img src="https://media.licdn.com/dms/image/C4E0BAQFhDgNUAL2OYQ/company-logo_200_200/0/1657647462946/frame_visual_logo?e=2147483647&v=beta&t=iti4m17YnjN6omaUtWuhzz28E7-cywviANVq7jU-4Xc" alt="Fotograma Visual Logo">
+        </div>
+        <ul>
+            <li><a href="#galeria">Galería</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#precios">Precios</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero" id="hero">
+        <h1>Bienvenido a Fotograma Visual</h1>
+    </div>
+
+    <!-- Sección Galería -->
+    <section id="galeria">
+               <img src="https://cdn.masterclassphotographers.com/wp-content/uploads/2021/08/24124739/paisaje-1-1024x579.jpg" alt="Imagen 1">
+        <img src="https://i.blogs.es/fe5e7d/8035360089_f37441e160_k/450_1000.jpg" alt="Imagen 2">
+        <img src="https://t3.ftcdn.net/jpg/00/62/03/20/360_F_62032088_DrPTIOgII0C2zUQs2wAZkwnxGJb0ySX1.jpg" alt="Imagen 3">
+        <img src="https://cdn.artphotolimited.com/images/5805227412eeb3002fbce016/700x700/coucher-du-soleil-sur-le-cap-d-antibes.jpg" alt="Imagen 4">
+        <img src="https://cdn.artphotolimited.com/images/57e40502ab9a750024166110/1000x1000/voile-le-soir.jpg" alt="Imagen 5">
+        <img src="https://cdn.artphotolimited.com/images/586f85a08a7fb427324327a4/700x700/marais-du-pantanal-bresil.jpg" alt="Imagen 6">
+        <img src="https://bptfotografia.com/wp-content/uploads/2021/07/foto-de-un-paisaje-1024x683.jpg" alt="Imagen 7">
+        <img src="https://i.blogs.es/fd905a/matthias-mullie-208395-unsplash/1366_2000.jpg" alt="Imagen 8">
+    </section>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+<br><br><br>
+    <!-- Sección Contacto -->
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <div class="redes-sociales">
+            <a href="https://facebook.com" target="_blank">Facebook</a>
+            <a href="https://twitter.com" target="_blank">Twitter</a>
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+        </div>
+        <form action="mailto:tuemail@example.com" method="post" enctype="text/plain">
+            <input type="text" name="nombre" placeholder="Tu Nombre" required>
+            <input type="email" name="email" placeholder="Tu Email" required>
+            <textarea name="mensaje" rows="4" placeholder="Tu Mensaje" required></textarea>
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+    <!-- Sección Precios -->
+    <section id="precios">
+        <h2>Precios</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Servicio</th>
+                    <th>Descripción</th>
+                    <th>Precio</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Servicio 1</td>
+                    <td>Fotografia artistica sencilla</td>
+                    <td>$100</td>
+                </tr>
+                <tr>
+                    <td>Servicio 2</td>
+                    <td>Fotografia profesional</td>
+                    <td>$200</td>
+                </tr>
+                <tr>
+                    <td>Servicio 3</td>
+                    <td>Toma de fotografias paquete deluxe</td>
+                    <td>$300</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const images = [
+                'https://i.blogs.es/3fd5a4/jumpstory-download20220511-143520/1366_2000.jpg',
+                'https://www.todofondos.net/wp-content/uploads/1920x1200-Escritorio-de-Alta-resolucion-Canada-naturaleza-paisaje-para-computadoras-con-1024x640.jpg',
+                'https://content.nationalgeographic.com.es/medio/2022/12/01/perfect-mirror_c5a8b00a_221201173058_2000x1333.jpg'
+            ];
+            let currentImageIndex = 0;
+            const heroElement = document.getElementById('hero');
+
+            function changeBackgroundImage() {
+                heroElement.style.backgroundImage = `url(${images[currentImageIndex]})`;
+                currentImageIndex = (currentImageIndex + 1) % images.length;
+            }
+
+            changeBackgroundImage();
+            setInterval(changeBackgroundImage, 3000);
+
+            // Scroll suave a las secciones
+            document.querySelectorAll('nav ul li a').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
